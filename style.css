@@ -176,11 +176,11 @@ badge{
  }
 
 .projecte:hover img {
-  opacity: 0.2;
+  opacity: 1;
 }
 
 .projectes img:hover {
-  transform: scale(1.05);
+  transform: scale(1.3);
 }
 
 .projecte:hover .overlay {
