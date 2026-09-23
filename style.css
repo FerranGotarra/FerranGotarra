@@ -177,6 +177,9 @@ badge{
 
 .projecte:hover img {
   opacity: 0.2;
+}
+
+.projectes img:hover {
   transform: scale(1.05);
 }
 
