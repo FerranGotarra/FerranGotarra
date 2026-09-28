@@ -62,32 +62,10 @@ section {
 
 /*seccio principal--------------------------------------------------------------*/
 .hero{
-    position: relative;
-    overflow: hidden;
-    min-height: 400px;
-    text-align: center;
-}
-
-.hero::before{
-    content: "";
-    position: absolute;
-    top: -20px;
-    left: -20px;
-    width: calc(100% + 40px);
-    height: calc(100% + 40px);
-
-    background-image: url("images/altium.png");
-    background-size: cover;
-    background-position: center;
-
-    filter: blur(8px);
-
-    z-index: 0;
-}
-
-.hero > div{
-    position: relative;
-    z-index: 1;
+    background-color: #f5f6f7;  /*definim el color de fons de la secció principal*/
+    min-height: 400px; /*definim l'alçada mínima de la secció principal*/
+    /* fem servir altura mínima perquè si el contingut de la secció és més gran que l'alçada mínima, la secció s'ajustarà a la mida del contingut*/
+    text-align: center; /*centrem el text de la secció principal*/
 }
 
 .hero-imatge-developer{
@@ -171,6 +149,7 @@ badge{
   border-radius: 10px;
   display: block;
   transition: all 0.3s ease;
+  object-fit: contain;
 }
 
 .projectes-container{
@@ -203,6 +182,8 @@ badge{
 
 .projectes img:hover {
   transform: scale(1.3);
+  z-index: 10;
+  position: relative;
 }
 
 .projecte:hover .overlay {
@@ -318,5 +299,3 @@ footer {
      font-size: 11px; padding: 6px 12px;
   }
 }
-
-
