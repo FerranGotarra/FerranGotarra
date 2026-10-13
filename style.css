@@ -86,8 +86,8 @@ section {
 
 /*Secció sobre mi-------------------------------------------------------*/
 .about-me{
-  height: 500px;
-  padding:10px;
+  min-height: auto;
+  padding: 60px 20px;
 }
 
 .about-me div{
@@ -143,9 +143,9 @@ badge{
 }
 
 .projectes img{
-  height: 300px;
-  width: 100%;
-  padding:10px;
+  max-width: 100%;
+  height: auto;
+  padding: 10px;
   border-radius: 10px;
   display: block;
   transition: all 0.3s ease;
@@ -291,7 +291,8 @@ footer {
   
   /*Secció sobre mi*/
   .about-me{
-    height: 200px;
+    height: auto;
+    padding: 40px 15px;
   }
 
   /*tamany del botó */
